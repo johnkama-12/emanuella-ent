@@ -1,91 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>emanuella.ent</title>
-    <link rel="stylesheet" href="styles/main.css /">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Emmanuella Enterprise</title>
 
-    <!-- Internal CSS goes here -->
   <style>
-      body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #dbe9eb;
-}
-
-header {
-    background: #007bff;
-    color: #ffffff;
-    padding: 10px 0;
-    text-align: center;
-}
-
-main {
-    padding: 20px;
-}
-
-footer {
-    background: #333;
-    color: #ffffff;
-    text-align: center;
-    padding: 10px 0;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
-
-@media (max-width: 768px) {
-    nav {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    /* General Reset and Base Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
-}
-      </style>
-      </head>
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f9fa;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #007bff;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    header address {
+      font-style: normal;
+      font-size: 0.95rem;
+    }
+
+    img.logo {
+      max-width: 250px;
+      height: auto;
+      margin: 10px auto;
+      display: block;
+    }
+
+    main {
+      padding: 30px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    h2 {
+      color: #007bff;
+      margin-bottom: 15px;
+      font-size: 1.5rem;
+      border-bottom: 2px solid #007bff;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    ul li {
+      padding: 6px 0;
+      border-bottom: 1px solid #ddd;
+    }
+
+    p {
+      margin: 8px 0;
+    }
+
+    a {
+      color: #007bff;
+      text-decoration: none;
+      display: inline-block;
+      margin-bottom: 5px;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 15px 10px;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+    }
+
+    /* Responsive Layout */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 1.5rem;
+      }
+
+      h2 {
+        font-size: 1.3rem;
+      }
+
+      img.logo {
+        max-width: 80%;
+      }
+    }
+  </style>
+</head>
+
 <body>
-    <header>
-        <h1 align="center">WELCOME TO EMMANUELLA ENTERPRISE</h1>
-         <section style="display: flex; justify-content: flex-end;">
-            <img src="images.jpg" alt="Logo showing Emmanuella Enterprise text in bold, vibrant colors, centered on a clean white background. The logo conveys a professional and welcoming atmosphere. No additional text is present." style="width:300px; height:auto; object-fit:contain; margin: 0 auto; display:block;">
-         </section>
-          <p><address align="center">A.J MOMOH STREET OPPOSITE, WAEC FREETOWN </address></p>
-    </header>
-    <main>
-         <section id="about">
-            <h2>WE OFFER SERVICES LIKE</h2>
-            <p>PRINTING SERVICES</p>
-            <p>LAMINATING</p>
-            <p>PHOTOCOPYING</p>
-            <p>SCANNING</p>
-            <p>ONLINE UNIVERSITY REGISTRATION</p>
-            <p>PRIVATE WASSE ENTRY</p>
-            <p>SCRACTCH AVAILBALE</p>
-            <p>TYPYING</p>
-            <p>MONEY GRAM</p>
-            <p>WESTERN UNION</p>
-            <p>BNB</p>
-            <p>AFRIMONEY</p>
-            <p>ORANGE MONEY</p>
-         </section>
-        <section id="telephone">
-            <h2>Telephone Number</h2>
-            <p>+23279137575</p>
-            <p>+23277882543</p>
-        </section>
-        
-        <section id="contact">
-            <div>
-            <h2>SOCIAL MEDIA</h2>
-            <a href="https://www.facebook.com/aminata.conteh.750?mibextid=ZbWKwL">VISIT US ON FACEBOOK</a>
-            <a href="https://www.instagram.com/aminatac.conteh33?igsh=MTN3ZXI3YzI1d3d5cg">VISIT US ON INSTAGRAM</a>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2025 EMMANUELLA ENTERPRISE. All rights reserved.</p>
-    </footer>
-    <script src="scripts/main.js"></script>
+
+  <header>
+    <h1>Welcome to Emmanuella Enterprise</h1>
+    <img src="images.jpg" alt="Emmanuella Enterprise Logo" class="logo">
+    <address>A.J Momoh Street, Opposite WAEC, Freetown</address>
+  </header>
+
+  <main>
+
+    <section id="about">
+      <h2>Our Services</h2>
+      <ul>
+        <li>Printing Services</li>
+        <li>Laminating</li>
+        <li>Photocopying</li>
+        <li>Scanning</li>
+        <li>Online University Registration</li>
+        <li>Private WASSCE Entry</li>
+        <li>Scratch Cards Available</li>
+        <li>Typing</li>
+        <li>MoneyGram</li>
+        <li>Western Union</li>
+        <li>BNB</li>
+        <li>AfriMoney</li>
+        <li>Orange Money</li>
+      </ul>
+    </section>
+
+    <section id="telephone">
+      <h2>Contact Numbers</h2>
+      <p>+232 791 37575</p>
+      <p>+232 778 82543</p>
+    </section>
+
+    <section id="contact">
+      <h2>Social Media</h2>
+      <p>
+        <a href="https://www.facebook.com/aminata.conteh.750?mibextid=ZbWKwL" target="_blank">Visit us on Facebook</a><br>
+        <a href="https://www.instagram.com/aminatac.conteh33?igsh=MTN3ZXI3YzI1d3d5cg" target="_blank">Visit us on Instagram</a>
+      </p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Emmanuella Enterprise. All rights reserved.</p>
+  </footer>
+
 </body>
 </html>
