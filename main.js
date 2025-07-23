@@ -21,4 +21,4 @@
   "devDependencies": {
     "live-server": "^1.2.1"
   }
-}// This file is intentionally left blank.
+}
